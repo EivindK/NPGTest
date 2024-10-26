@@ -13,7 +13,6 @@ import { Sphere, useGLTF } from '@react-three/drei'
 // import lampPostScene from '../assets/3d/low-poly_lamp_post.glb'
 import lampPostScene from '/3d/low-poly_lamp_post.glb'
 
-
 const Lamppost = (props) => {
   const { nodes, materials } = useGLTF(lampPostScene)
 	const lamppostRef = useRef();
@@ -37,6 +36,6 @@ const Lamppost = (props) => {
   )
 }
 
-useGLTF.preload('/low-poly_lamp_post.glb')
+useGLTF.preload('/3d/low-poly_lamp_post.glb')
 
 export default Lamppost
