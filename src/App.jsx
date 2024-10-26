@@ -1,5 +1,4 @@
 /* eslint-disable no-undef */
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import ScormProvider from 'react-scorm-provider';
 
 
@@ -10,11 +9,7 @@ const App = () => {
     <ScormProvider version="1.2" debug={process.env.NODE_ENV !== 'production'} >
       <div>
           <main className="bg-slate-300/20">
-              <Router>
-                  <Routes>
-                      <Route path="/" element={<Home />} />
-                  </Routes>
-              </Router>
+            <Home />
           </main>
       </div>
     </ScormProvider>
