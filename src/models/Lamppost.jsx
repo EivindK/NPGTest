@@ -36,6 +36,5 @@ const Lamppost = (props) => {
   )
 }
 
-useGLTF.preload('/3d/low-poly_lamp_post.glb')
 
 export default Lamppost
